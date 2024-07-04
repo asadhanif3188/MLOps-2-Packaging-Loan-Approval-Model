@@ -48,7 +48,7 @@ FEATURES_TO_ENCODE = ['Gender',
                 'Credit_History',
                 'Property_Area']
 
-FEATURE_TO_MODIFY = 'ApplicantIncome'
+FEATURE_TO_MODIFY = ['ApplicantIncome']
 FEATURE_TO_ADD = 'CoapplicantIncome'
 
 DROP_FEATURES = ['CoapplicantIncome']

@@ -1,4 +1,4 @@
-from sklearn.base import BaseEstimator, TransformerMixin
+from sklearn.base import BaseEstimator,TransformerMixin
 from prediction_model.config import config
 import numpy as np
 
@@ -57,7 +57,8 @@ class DomainProcessing(BaseEstimator, TransformerMixin):
 
     def transform(self, X):
         X = X.copy()
-        X[self.variable_to_modify] = X[self.variable_to_modify] + X[self.variable_to_add]
+        for feature in self.variable_to_modify:
+            X[feature] = X[feature] + X[self.variable_to_add]
         return X
 
 class CustomLabelEncoder(BaseEstimator,TransformerMixin):
