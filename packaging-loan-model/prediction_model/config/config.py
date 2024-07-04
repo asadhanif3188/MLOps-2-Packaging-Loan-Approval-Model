@@ -14,6 +14,7 @@ SAVE_MODEL_PATH = os.path.join(PACKAGE_ROOT, 'trained_models')
 
 TARGET = 'Loan_Status'
 
+# final features to train the model
 FEATURES = ['Gender', 
             'Married', 
             'Dependents', 
@@ -23,7 +24,8 @@ FEATURES = ['Gender',
             'LoanAmount', 
             'Loan_Amount_Term', 
             'Credit_History',
-            'Property_Area']
+            'Property_Area',
+            'CoapplicantIncome']
 
 NUM_FEATURES = ['ApplicantIncome', 
                 'LoanAmount', 
