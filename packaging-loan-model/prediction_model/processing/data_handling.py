@@ -1,10 +1,10 @@
 import pandas as pd
 import joblib 
-from pathlib import Path 
-import sys
+from pathlib import Path
 import os
- 
-PACKAGE_ROOT = Path(os.path.abspath(os.path.dirname(__file__))).parent
+import sys
+
+PACKAGE_ROOT = Path(os.path.abspath(os.path.dirname(__file__))).parent.parent
 sys.path.append(str(PACKAGE_ROOT))
 
 from prediction_model.config import config
