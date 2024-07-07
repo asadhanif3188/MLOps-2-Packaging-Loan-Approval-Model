@@ -1,6 +1,12 @@
-import os
 import pandas as pd
 import joblib 
+from pathlib import Path 
+import sys
+import os
+ 
+PACKAGE_ROOT = Path(os.path.abspath(os.path.dirname(__file__))).parent
+sys.path.append(str(PACKAGE_ROOT))
+
 from prediction_model.config import config
 
 def load_dataset(file_name):
