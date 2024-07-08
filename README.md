@@ -30,7 +30,7 @@ packaging-loan-model
 └── tests
     ├── pytest.ini
     └── test_prediction.py
-```.
+```
 
 
 ### Crate venv in Windows 
